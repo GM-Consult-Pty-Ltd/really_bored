@@ -21,6 +21,21 @@ void main() {
       expect(activity == null, false);
       if (activity != null) {
         Console.out(title: activity.activity, results: [activity.toJson()]);
+      } else {
+        print('No activity found!');
+      }
+
+      // get a activity using parameters
+      activity = await Bored.kitchenSink(
+          // minPrice: 0.2,
+          // maxPrice: 1.0,
+          // minAccessibility: 0.6,
+          participants: 5);
+      // expect(activity == null, false);
+      if (activity != null) {
+        Console.out(title: activity.activity, results: [activity.toJson()]);
+      } else {
+        print('No activity found!');
       }
     });
   });

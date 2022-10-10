@@ -29,7 +29,7 @@ enum ActivityType {
   /// Just chill la.
   relaxation,
 
-  /// Play a musical instruement or listen to your favorite tunes.
+  /// Play a musical instrument or listen to your favorite tunes.
   music,
 
   /// Just wasting time.

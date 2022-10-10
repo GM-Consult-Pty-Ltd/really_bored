@@ -5,7 +5,7 @@ All rights reserved.
 -->
 
 [![GM Consult Pty Ltd](https://raw.githubusercontent.com/GM-Consult-Pty-Ltd/really_bored/main/dev/images/package_header.png?raw=true "GM Consult Pty Ltd")](https://github.com/GM-Consult-Pty-Ltd)
-## **A simple implementation of `The Bored API` .**
+## **A simple implementation of *The Bored API* .**
 
 This is a simple DART implementation of the [Bored API](https://www.boredapi.com/) we built to test our [core dart libraries](https://pub.dev/packages/gmconsult_dart_core). 
 
@@ -44,7 +44,7 @@ In your code file add the following import:
 import 'package:really_bored/really_bored.dart';
 ```
 
-just go for Bored.random.
+Just go for Bored.random.
 
 ```dart
   activity = await Bored.random;

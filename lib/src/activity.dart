@@ -41,28 +41,39 @@ class Activity {
         'accesibility': accessibility.toStringAsFixed(2)
       };
 
-  /// Object property,
+  /// The primary key (id) of this activity.
   final int key;
 
-  /// Object property,
+  /// The type of activity.
   final ActivityType type;
 
-  /// Object property,
+  /// Description of the queried activity.
   final String activity;
 
-  /// Object property,
+  /// Url to a page on the InterWeb where you can find this activity
   final String link;
 
-  /// Object property,
+  /// The number of people that this activity could involve.
   final int participants;
 
-  /// Object property,
+  /// A rating  on a scale of 0 to 1.0 of the subjective cost of the event
+  /// with zero being free.
+  ///
+  /// I guess its not gonna be the same rating for Elon and me.
   final double price;
 
-  /// Object property,
+  /// A rating on a scale of 0 to 1.0 describing how possible an event is to
+  /// do with zero being the most accessible.
   final double accessibility;
 
   /// Const default generative constructor.
+  ///
+  ///
   const Activity(this.key, this.type, this.activity, this.link,
-      this.participants, this.price, this.accessibility);
+      this.participants, this.price, this.accessibility)
+      : assert(participants > -1, 'The participants cannot be less than 1!'),
+        assert(price >= 0 && price <= 1.0,
+            'The price rating must be between 0.0 and 1.0 (inclusive)!'),
+        assert(accessibility >= 0 && accessibility <= 1.0,
+            'The accesibility rating must be between 0.0 and 1.0 (inclusive)!');
 }

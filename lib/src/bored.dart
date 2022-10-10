@@ -35,6 +35,25 @@ class Bored extends ApiEndpointBase<Activity> {
       double? maxPrice,
       double? minAccessibility,
       double? maxAccessibility}) {
+    assert(participants == null || participants > -1,
+        'The participants cannot be less than 1!');
+    assert(minPrice == null || (minPrice >= 0 && minPrice <= 1),
+        'The price rating must be between 0.0 and 1.0 (inclusive)!');
+    assert(maxPrice == null || (maxPrice >= 0 && maxPrice <= 1),
+        'The price rating must be between 0.0 and 1.0 (inclusive)!');
+    assert((maxPrice ?? 1.0) >= (minPrice ?? 0),
+        'The minPrice cannot be more than the maxPrice!');
+    assert(
+        minAccessibility == null ||
+            (minAccessibility >= 0 && minAccessibility <= 1),
+        'The accesibility rating must be between 0.0 and 1.0 (inclusive)!');
+    assert(
+        maxAccessibility == null ||
+            (maxAccessibility >= 0 && maxAccessibility <= 1),
+        'The accesibility rating must be between 0.0 and 1.0 (inclusive)!');
+    assert((maxAccessibility ?? 1.0) >= (minAccessibility ?? 0),
+        'The minAccessibility cannot be more than the maxAccessibility!');
+
     final queryParams = <String, String>{};
     if (id != null) {
       {
@@ -128,6 +147,17 @@ class Bored extends ApiEndpointBase<Activity> {
   @override
   Future<Activity?> post(Activity? obj) async {
     return obj;
+  }
+
+  @override
+  Future<Map<String, dynamic>?> getJson() async {
+    final json = await super.getJson();
+    if (json != null) {
+      if (json['activity'] == null) {
+        return null;
+      }
+    }
+    return json;
   }
 
   /// We haven't attempted posting to the `Bored Api` and we suggest you don't
