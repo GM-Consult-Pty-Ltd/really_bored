@@ -12,12 +12,12 @@ NOTES:
 
 -->
 
-[![GM Consult Pty Ltd](https://raw.githubusercontent.com/GM-Consult-Pty-Ltd/dart_package_template/main/dev/images/gmconsult_dev_header.png?raw=true "GM Consult Pty Ltd")](https://github.com/GM-Consult-Pty-Ltd)
-## **TODO: A short description of your package.**
+[![GM Consult Pty Ltd](https://raw.githubusercontent.com/GM-Consult-Pty-Ltd/really_bored/main/dev/images/package_header.png?raw=true "GM Consult Pty Ltd")](https://github.com/GM-Consult-Pty-Ltd)
+## **A simple implementation of `The Bored API` .**
 
-TODO: A short description of your package.
+This is a simple DART implementation of the [Bored API](https://www.boredapi.com/) we built to test our [core dart libraries](https://pub.dev/packages/gmconsult_dart_core). 
 
-*THIS PACKAGE IS **PRE-RELEASE** AND SUBJECT TO DAILY BREAKING CHANGES.*
+It is by no means intended as a full API implementation.
 
 *Contents:*
 - [Overview](#overview)
@@ -31,7 +31,9 @@ TODO: A short description of your package.
 
 TODO: Overview
 
-Refer to the [references](#references) to learn more about the theory behind this library.
+The [Bored API](https://www.boredapi.com/) helps you find things to do when you're bored! There are fields like the number of participants, activity type, and more that help you narrow down your results.
+
+We provide a few static methods that asynchronously returns an activity from the API based on parameters, or just go for Bored.random.
 
 (*[back to top](#)*)
 
@@ -41,45 +43,45 @@ In the `pubspec.yaml` of your flutter project, add the following dependency:
 
 ```yaml
 dependencies:
-  dart_package_template: <latest_version>
+  really_bored: <latest_version>
 ```
 
 In your code file add the following import:
 
 ```dart
-import 'package:dart_package_template/dart_package_template.dart';
+import 'package:really_bored/really_bored.dart';
 ```
 
-TODO: describe usage.
+just go for Bored.random.
+
+```dart
+  activity = await Bored.random;
+```
 
 (*[back to top](#)*)
 
 ## API
 
-The [API](https://pub.dev/documentation/dart_package_template/latest/) exposes
+Full [API documentation](https://pub.dev/documentation/really_bored/latest/), sort of...
 
-TODO: describe the API
 
 (*[back to top](#)*)
 
 ## Definitions
 
-The following definitions are used throughout the [documentation](https://pub.dev/documentation/dart_package_template/latest/):
-* TODO: add definitions
+None
 
 (*[back to top](#)*)
 
 ## References
 
-* TODO: add references
+* [Bored API](https://www.boredapi.com/)
 
 (*[back to top](#)*)
 
 ## Issues
 
-If you find a bug please fill an [issue](https://github.com/GM-Consult-Pty-Ltd/dart_package_template/issues).  
-
-This project is a supporting package for a revenue project that has priority call on resources, so please be patient if we don't respond immediately to issues or pull requests.
+If you find a bug please fill an [issue](https://github.com/GM-Consult-Pty-Ltd/really_bored/issues).  
 
 (*[back to top](#)*)
 

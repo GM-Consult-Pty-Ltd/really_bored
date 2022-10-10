@@ -7,7 +7,7 @@ All rights reserved.
 <!-- Always use the heading structure below -->
 *THIS PACKAGE IS **PRE-RELEASE** AND SUBJECT TO DAILY BREAKING CHANGES.*
 
-## 0.0.1-1
+## 0.0.1
 **PRE-RELEASE, Initial version**
 <!-- 
 ### *Breaking changes*
