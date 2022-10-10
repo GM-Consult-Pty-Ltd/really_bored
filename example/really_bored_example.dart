@@ -25,7 +25,7 @@ void main() async {
     print('No activity found!');
   }
 
-  // get a activity using parameters
+  // get an activity using parameters
   activity = await Bored.kitchenSink(
       minPrice: 0.2, maxPrice: 1.0, minAccessibility: 0.6, participants: 2);
   if (activity != null) {

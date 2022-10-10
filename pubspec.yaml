@@ -3,8 +3,8 @@
 # All rights reserved.
 
 name: really_bored
-description: A simple implementation of `The Bored API`.
-version: 0.0.1+1
+description: A simple implementation of `The Bored API` used to test the GM Consult core libraries.
+version: 0.0.1+2
 repository: https://github.com/GM-Consult-Pty-Ltd/really_bored
 homepage: https://github.com/GM-Consult-Pty-Ltd
 issue_tracker: https://github.com/GM-Consult-Pty-Ltd/really_bored/issues

@@ -75,8 +75,12 @@ All rights reserved.
 <p>In your code file add the following import:</p>
 <pre class="language-dart"><code class="language-dart">import 'package:really_bored/really_bored.dart';
 </code></pre>
-<p>Just go for Bored.random.</p>
+<p>Just go for Bored.random:</p>
 <pre class="language-dart"><code class="language-dart">  activity = await Bored.random;
+</code></pre>
+<p>Or get an activity using parameters:</p>
+<pre class="language-dart"><code class="language-dart">  activity = await Bored.kitchenSink(
+      minPrice: 0.2, maxPrice: 1.0, minAccessibility: 0.6, participants: 2);
 </code></pre>
 <p>(<em><a href="#">back to top</a></em>)</p>
 <h2 id="api">API</h2>
@@ -143,7 +147,7 @@ It is by no means intended as a full API implementation.
 <footer>
   <span class="no-break">
     really_bored
-      0.0.1
+      0.0.1+2
   </span>
 
   

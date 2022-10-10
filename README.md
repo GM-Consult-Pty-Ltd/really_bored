@@ -44,10 +44,16 @@ In your code file add the following import:
 import 'package:really_bored/really_bored.dart';
 ```
 
-Just go for Bored.random.
+Just go for Bored.random:
 
 ```dart
   activity = await Bored.random;
+```
+Or get an activity using parameters:
+
+```dart
+  activity = await Bored.kitchenSink(
+      minPrice: 0.2, maxPrice: 1.0, minAccessibility: 0.6, participants: 2);
 ```
 
 (*[back to top](#)*)

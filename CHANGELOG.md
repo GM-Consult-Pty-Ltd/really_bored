@@ -4,6 +4,13 @@ Copyright © 2022, GM Consult Pty Ltd
 All rights reserved.
 -->
 
+## 0.0.1+2
+
+### *Updated*
+* Tests.
+* Examples
+* Documentation.
+
 ## 0.0.1+1
 
 ### *Updated*
