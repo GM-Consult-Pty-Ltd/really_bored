@@ -4,14 +4,6 @@ Copyright © 2022, GM Consult Pty Ltd
 All rights reserved. 
 -->
 
-<!-- 
-NOTES:
-
-1.  Place all images displayed in your README in the dev/images folder.  That way you can link to them using an absolute link at 
-    https://raw.githubusercontent.com/GM-Consult-Pty-Ltd/{YOUR_PACKAGE}/main/dev/images/{YOUR_IMAGE.png}?raw=true
-
--->
-
 [![GM Consult Pty Ltd](https://raw.githubusercontent.com/GM-Consult-Pty-Ltd/really_bored/main/dev/images/package_header.png?raw=true "GM Consult Pty Ltd")](https://github.com/GM-Consult-Pty-Ltd)
 ## **A simple implementation of `The Bored API` .**
 
@@ -29,9 +21,9 @@ It is by no means intended as a full API implementation.
 
 ## Overview
 
-TODO: Overview
+The [Bored API](https://www.boredapi.com/) helps you find things to do when you're bored! There are fields like the number of participants, activity type, and more that help you narrow down your results (*unashamedly plagiarized from the Bored Api page on the InterWeb*).
 
-The [Bored API](https://www.boredapi.com/) helps you find things to do when you're bored! There are fields like the number of participants, activity type, and more that help you narrow down your results.
+If you don't know what `bored` means (or you are, indeed, bored), check out the [definition of bored](#definitions)!
 
 We provide a few static methods that asynchronously returns an activity from the API based on parameters, or just go for Bored.random.
 
@@ -69,7 +61,7 @@ Full [API documentation](https://pub.dev/documentation/really_bored/latest/), so
 
 ## Definitions
 
-None
+* `bored` - feeling weary and impatient because one is unoccupied or lacks interest in one's current activity (Oxford English Dictionary).
 
 (*[back to top](#)*)
 
@@ -81,7 +73,7 @@ None
 
 ## Issues
 
-If you find a bug please fill an [issue](https://github.com/GM-Consult-Pty-Ltd/really_bored/issues).  
+We got bored (sic) testing this. If you find a bug please fill an [issue](https://github.com/GM-Consult-Pty-Ltd/really_bored/issues).  
 
 (*[back to top](#)*)
 
