@@ -4,7 +4,6 @@ Copyright © 2022, GM Consult Pty Ltd
 All rights reserved.
 -->
 
-
 ## 0.0.1+1
 
 ### *Updated*
@@ -13,19 +12,3 @@ All rights reserved.
 
 ## 0.0.1
 **PRE-RELEASE, Initial version**
-<!-- 
-### *Breaking changes*
-* None
-
-### *New*
-* New package
-
-### *Bug fixes*
-* None
-
-### *Updated*
-* Dependencies.
-* Tests.
-* Documentation.
-* Examples.
- -->
